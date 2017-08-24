@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <main role="main" class="p-main">
+    <article>
+      <header class="c-content-heading">
+        <h1 class="c-content-heading__title-name">{{ .Title }}</h1>
+      </header>
+
+      <section class="c-posted-body">
+        {{ .Content }}
+      </section>
+
+      <footer class="c-posted-footer">
+        <time class="c-posted-footer__timestamp">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </time>
+
+        {{ if .Params.tags }}
+          <ul class="c-posted-footer__tags">
+            {{ range .Params.tags }}
+              <li>
+                <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+
+      </footer>
+    </article>
+  </main>
+{{ end }}

@@ -1,0 +1,29 @@
+<section class="c-summary-card">
+  <div class="c-summary-card__inner">
+    {{ if and (.Params.image) (ne .Params.image "") }}
+      <div class="c-summary-card__image-wrap">
+        <a href="{{ .Permalink }}">
+          <img src="{{ .Params.image }}" alt="" class="c-summary-card__image">
+        </a>
+      </div>
+    {{ end }}
+    <time class="c-summary-card__timestamp">
+      {{ .Date.Format "Jan 2, 2006" }}
+    </time>
+    <a href="{{ .Permalink }}">
+      <h2 class="c-summary-card__title-name">
+        {{ .Title }}
+        {{ if .Draft }}:: DRAFT{{end}}
+      </h2>
+    </a>
+    {{ if .Params.tags }}
+      <ul class="c-summary-card__tags">
+        {{ range .Params.tags }}
+          <li>
+            <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</section>

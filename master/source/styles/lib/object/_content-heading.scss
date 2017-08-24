@@ -1,0 +1,32 @@
+
+.c-content-heading {
+  $height-margin: 30px;
+  position: relative;
+  padding: 0 0 $height-margin;
+  margin: $height-margin * 2 0 $height-margin;
+  text-align: center;
+
+  &::after {
+    background: $font-color-default;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.c-content-heading--en {
+    font-family: $ff-logo;
+  }
+
+}
+
+.c-content-heading__title-name {
+  line-height: 1.3;
+  font-size: $font-size-30px;
+  font-weight: normal;
+  margin: 0;
+}

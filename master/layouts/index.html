@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <main role="main" class="p-main">
+
+    <ul class="p-my-accounts">
+      {{ with .Site.Params.github }}
+        <li class="p-my-accounts__item">
+          <a href="{{ . }}">
+            <svg class="p-my-accounts__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
+          </a>
+        </li>
+      {{ end }}
+      {{ with .Site.Params.instagram }}
+        <li class="p-my-accounts__item">
+          <a href="{{ . }}">
+            <svg class="p-my-accounts__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ if $paginator.Pages }}
+      <article>
+        <header class="c-content-heading c-content-heading--en">
+          <h1 class="c-content-heading__title-name">Recent Articles</h1>
+        </header>
+        <div class="c-summary-card-wrapper">
+          {{ range $paginator.Pages }}
+            {{ partial "_summary-card.html" . }}
+          {{ end }}
+        </div>
+      </article>
+    {{ end }}
+
+  </main>
+{{ end }}

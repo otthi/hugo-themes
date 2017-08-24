@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{{ with .Site.LanguageCode }}
+  <html lang="{{ . }}">
+{{ else }}
+  <html>
+{{ end }}
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Title }}
+    {{ else }}
+      {{ .Title }} | {{ .Site.Title }}
+    {{ end }}
+  </title>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="p-page-wrapper">
+    {{ partial "header.html" . }}
+
+    {{ block "main" . }}
+
+    {{ end }}
+    {{ partial "footer.html" . }}
+  </div>
+  {{ partial "_icon.html" . }}
+</body>
+</html>

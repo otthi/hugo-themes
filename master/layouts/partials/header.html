@@ -1,0 +1,20 @@
+<header class="p-header">
+  {{ if .IsHome }}
+    <div class="p-header-logo p-header-logo--top">
+      <span>
+        {{ .Site.Title }}
+      </span>
+      {{ with .Site.Params.profile }}
+        <span class="p-header-logo__image">
+          <img src="{{ . }}" alt="">
+        </span>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="p-header-logo">
+      <a href="{{ .Site.BaseURL }}">
+        {{ .Site.Title }}
+      </a>
+    </div>
+  {{ end }}
+</header>
