@@ -1,12 +1,15 @@
 <section class="c-summary-card">
   <div class="c-summary-card__inner">
-    {{ if and (.Params.image) (ne .Params.image "") }}
-      <div class="c-summary-card__image-wrap">
-        <a href="{{ .Permalink }}">
+    <div class="c-summary-card__image-wrap">
+      <a href="{{ .Permalink }}">
+        {{ if and (.Params.image) (ne .Params.image "") }}
           <img src="{{ .Params.image }}" alt="" class="c-summary-card__image">
-        </a>
-      </div>
-    {{ end }}
+        {{ else }}
+          <div class="c-summary-card__image c-summary-card__image--is-empty">
+          </div>
+        {{ end }}
+      </a>
+    </div>
     <time class="c-summary-card__timestamp">
       {{ .Date.Format "Jan 2, 2006" }}
     </time>
