@@ -5,7 +5,8 @@
         {{ if and (.Params.image) (ne .Params.image "") }}
           <img src="{{ .Params.image }}" alt="" class="c-summary-card__image">
         {{ else }}
-          <img src="/images/eyecatch/eyecatch-empty.png" alt="" class="c-summary-card__image">
+          <div class="c-summary-card__image c-summary-card__image--is-empty">
+          </div>
         {{ end }}
       </a>
     </div>
