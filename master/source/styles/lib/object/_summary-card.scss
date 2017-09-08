@@ -67,6 +67,12 @@
   left: 0;
   bottom: 0;
   right: 0;
+  transition: .2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
 }
 
 .c-summary-card__title-name {
