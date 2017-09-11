@@ -73,6 +73,28 @@
     transform: scale(1.2);
   }
 
+  &.c-summary-card__image--is-empty {
+    background: $color-offwhite;
+    text-align: center;
+    color: #fff;
+
+    span {
+      $height: 20px;
+      font-family: $ff-logo;
+      text-transform: uppercase;
+      font-size: $font-size-20px;
+      letter-spacing: .1em;
+      height: $height;
+      line-height: $height;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+
 }
 
 .c-summary-card__title-name {

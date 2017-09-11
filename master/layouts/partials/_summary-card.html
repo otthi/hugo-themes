@@ -6,6 +6,7 @@
           <img src="{{ .Params.image }}" alt="" class="c-summary-card__image">
         {{ else }}
           <div class="c-summary-card__image c-summary-card__image--is-empty">
+            <span>empty</span>
           </div>
         {{ end }}
       </a>
@@ -16,7 +17,7 @@
     <a href="{{ .Permalink }}">
       <h2 class="c-summary-card__title-name">
         {{ .Title }}
-        {{ if .Draft }}:: DRAFT{{end}}
+        {{ if .Draft }}:: DRAFT{{ end }}
       </h2>
     </a>
     {{ if .Params.tags }}
