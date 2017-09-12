@@ -1,0 +1,57 @@
+.c-eyecatch {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    width: 100%;
+    padding-top: 43.4%;
+    display: block;
+    content: '';
+  }
+
+}
+
+.c-eyecatch__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: .2s;
+
+  &.c-eyecatch__image--is-empty {
+    background: $color-offwhite;
+    text-align: center;
+    color: #fff;
+
+    span {
+      $height: 20px;
+      font-family: $ff-logo;
+      text-transform: uppercase;
+      font-size: $font-size-20px;
+      letter-spacing: .1em;
+      height: $height;
+      line-height: $height;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+
+  }
+
+}
+
+.c-eyecatch__link {
+  &:hover {
+    .c-eyecatch__image {
+      transform: scale(1.2);
+    }
+  }
+}

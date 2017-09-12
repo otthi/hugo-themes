@@ -1,11 +1,11 @@
 <section class="c-summary-card">
   <div class="c-summary-card__inner">
-    <div class="c-summary-card__image-wrap">
-      <a href="{{ .Permalink }}">
+    <div class="c-eyecatch">
+      <a href="{{ .Permalink }}" class="c-eyecatch__link">
         {{ if and (.Params.image) (ne .Params.image "") }}
-          <img src="{{ .Params.image }}" alt="" class="c-summary-card__image">
+          <img src="{{ .Params.image }}" alt="" class="c-eyecatch__image">
         {{ else }}
-          <div class="c-summary-card__image c-summary-card__image--is-empty">
+          <div class="c-eyecatch__image c-eyecatch__image--is-empty">
             <span>empty</span>
           </div>
         {{ end }}

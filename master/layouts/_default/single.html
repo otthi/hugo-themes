@@ -5,6 +5,12 @@
         <h1 class="c-content-heading__title-name">{{ .Title }}</h1>
       </header>
 
+      {{ if and (.Params.image) (ne .Params.image "") }}
+        <div class="c-eyecatch">
+          <img src="{{ .Params.image }}" alt="" class="c-eyecatch__image">
+        </div>
+      {{ end }}
+
       <section class="c-posted-body">
         {{ .Content }}
       </section>
