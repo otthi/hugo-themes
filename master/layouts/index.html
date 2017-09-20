@@ -4,14 +4,14 @@
     <ul class="p-my-accounts">
       {{ with .Site.Params.github }}
         <li class="p-my-accounts__item">
-          <a href="{{ . }}">
+          <a href="{{ . }}" target="_blank">
             <svg class="p-my-accounts__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
           </a>
         </li>
       {{ end }}
       {{ with .Site.Params.instagram }}
         <li class="p-my-accounts__item">
-          <a href="{{ . }}">
+          <a href="{{ . }}" target="_blank">
             <svg class="p-my-accounts__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
           </a>
         </li>
@@ -26,11 +26,16 @@
         </header>
         <div class="c-summary-card-wrapper">
           {{ range $paginator.Pages }}
-            {{ partial "_summary-card.html" . }}
+          {{ partial "_summary-card.html" . }}
           {{ end }}
         </div>
       </article>
+    {{ else }}
+      <p class="c-message">
+        準備中
+      </p>
     {{ end }}
+
 
   </main>
 {{ end }}
