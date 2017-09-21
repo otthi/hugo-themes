@@ -1,8 +1,11 @@
 +++
 date = {{ .Date }}
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
-draft = true
 categories = []
 tags = []
 image = ""
+
+draft = true
+preview = true
+isCJKLanguage = true
 +++
