@@ -8,19 +8,17 @@
   <meta charset="UTF-8">
   <title>
     {{ if .IsHome }}
-      {{ .Site.Title }}
+    {{ .Site.Title }}
     {{ else }}
-      {{ .Title }} | {{ .Site.Title }}
+    {{ .Title }} | {{ .Site.Title }}
     {{ end }}
   </title>
+  {{ partial "gtm/_head-tag.html" . }}
   {{ partial "head.html" . }}
 </head>
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXT52W"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  {{ partial "gtm/_body-tag.html" . }}
 
   <div class="p-page-wrapper">
     {{ partial "header.html" . }}

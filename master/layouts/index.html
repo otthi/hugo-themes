@@ -2,20 +2,16 @@
   <main role="main" class="p-main">
 
     <ul class="p-my-accounts">
-      {{ with .Site.Params.github }}
-        <li class="p-my-accounts__item">
-          <a href="{{ . }}" target="_blank">
-            <svg class="p-my-accounts__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
-          </a>
-        </li>
-      {{ end }}
-      {{ with .Site.Params.instagram }}
-        <li class="p-my-accounts__item">
-          <a href="{{ . }}" target="_blank">
-            <svg class="p-my-accounts__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
-          </a>
-        </li>
-      {{ end }}
+      <li class="p-my-accounts__item">
+        <a href="https://github.com/otthi/" target="_blank">
+          <svg class="p-my-accounts__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
+        </a>
+      </li>
+      <li class="p-my-accounts__item">
+        <a href="https://www.instagram.com/otthi194" target="_blank">
+          <svg class="p-my-accounts__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
+        </a>
+      </li>
     </ul>
 
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}

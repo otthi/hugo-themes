@@ -4,11 +4,9 @@
       <span>
         {{ .Site.Title }}
       </span>
-      {{ with .Site.Params.profile }}
-        <span class="p-header-logo__image">
-          <img src="{{ . }}" alt="">
-        </span>
-      {{ end }}
+      <span class="p-header-logo__image">
+        <img src="/images/prof.jpg" alt="">
+      </span>
     </div>
   {{ else }}
     <div class="p-header-logo">
