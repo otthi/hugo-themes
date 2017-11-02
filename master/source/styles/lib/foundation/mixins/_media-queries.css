@@ -1,0 +1,10 @@
+:root {
+  --breakpoint-small-screen: 480px;
+  --breakpoint-medium-screen: 768px;
+  --breakpoint-large-screen: 960px;
+}
+
+@custom-media --screen-sm screen and (max-width: calc(var(--breakpoint-small-screen) - 1));
+@custom-media --screen-md screen and (min-width: var(--breakpoint-small-screen)) and (max-width: calc(var(--breakpoint-medium-screen) - 1));
+@custom-media --screen-md-upper screen and (min-width: var(--breakpoint-small-screen));
+@custom-media --screen-lg-upper screen and (min-width: var(--breakpoint-medium-screen));

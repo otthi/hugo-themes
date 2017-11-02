@@ -1,4 +1,4 @@
-@mixin icon($size) {
+@define-mixin icon $size {
   width: $size;
   height: $size;
   fill: currentColor;

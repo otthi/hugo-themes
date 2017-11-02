@@ -1,0 +1,10 @@
+html {
+  font-size: var(--font-size-origin);
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--font-color-default);
+  letter-spacing: .05em;
+  font-family: var(--ff-default);
+}

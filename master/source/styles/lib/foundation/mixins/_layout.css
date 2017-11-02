@@ -1,4 +1,4 @@
-@mixin container {
+@define-mixin container {
   max-width: $container-width;
   padding: 0 20px;
   margin-right: auto;
