@@ -1,0 +1,9 @@
+:root {
+  --breakpoint-small-screen: 480px;
+  --breakpoint-medium-screen: 768px;
+  --breakpoint-large-screen: 960px;
+}
+
+@custom-media --screen-sm (max-width: 480px);
+@custom-media --screen-md-upper (min-width: 481px);
+@custom-media --screen-lg-upper (min-width: 768px);
