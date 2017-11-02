@@ -1,19 +1,21 @@
-$header-prof-size: 160px;
+:root {
+  --header-prof-size: 160px;
+  --header-logo-margin: 35px;
+}
 
 .p-header {
-  background: $color-offwhite;
+  background: var(--color-offwhite);
   box-shadow: 0 0 3px rgba(0, 0, 0, .4);
 }
 
 .p-header-logo {
-  $height-margin: 35px;
-  font-family: $ff-logo;
+  font-family: var(--ff-logo);
   font-weight: normal;
-  color: $header-logo-color;
-  font-size: $font-size-30px;
+  color: var(--header-logo-color);
+  font-size: var(--font-size-30px);
   text-align: center;
-  padding: $height-margin 0;
-  margin: 0 0 $height-margin;
+  padding: var(--header-logo-margin) 0;
+  margin: 0 0 var(--header-logo-margin);
 
   a {
     text-decoration: none;
@@ -30,8 +32,8 @@ $header-prof-size: 160px;
   }
 
   &.p-header-logo--top {
-    padding-bottom: $header-prof-size / 2 + $height-margin;
-    margin-bottom: $header-prof-size / 2 + $height-margin;
+    padding-bottom: calc(var(--header-prof-size) / 2 + var(--header-logo-margin));
+    margin-bottom: calc(var(--header-prof-size) / 2 + var(--header-logo-margin));
     position: relative;
 
     .p-header-logo__image {
@@ -43,12 +45,12 @@ $header-prof-size: 160px;
 }
 
 .p-header-logo__image {
-  width: $header-prof-size;
-  height: $header-prof-size;
+  width: var(--header-prof-size);
+  height: var(--header-prof-size);
   border-radius: 100%;
   position: absolute;
   left: 50%;
-  bottom: -($header-prof-size / 2);
+  bottom: calc(var(--header-prof-size) / 2 * -1);
   transform: translateX(-50%);
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, .4);

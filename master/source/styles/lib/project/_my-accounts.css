@@ -15,5 +15,5 @@
 }
 
 .p-my-accounts__icon {
-  @include icon(22px);
+  @add-mixin icon 22px;
 }

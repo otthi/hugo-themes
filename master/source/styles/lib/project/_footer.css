@@ -1,5 +1,5 @@
 .p-footer {
-  background: $footer-bg-color;
+  background: var(--footer-bg-color);
   color: #fff;
   letter-spacing: .1em;
 }

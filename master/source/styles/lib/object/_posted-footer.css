@@ -1,15 +1,17 @@
-$border-color: $color-offwhite;
+:root {
+  --posted-footer-border-color: var(--color-offwhite);
+}
 
 .c-posted-footer {
   margin: 3em 0;
   padding-top: 2.3em;
-  font-size: $font-size-12px;
+  font-size: var(--font-size-12px);
   text-align: right;
-  border-top: .3em solid $border-color;
+  border-top: .3em solid var(--posted-footer-border-color);
 }
 
 .c-posted-footer__timestamp {
-  font-family: $ff-en;
+  font-family: var(--ff-en);
 }
 
 .c-posted-footer__tags {
@@ -34,13 +36,13 @@ $border-color: $color-offwhite;
 
   a {
     display: inline-block;
-    color: $font-color-default;
+    color: var(--font-color-default);
     text-decoration: none;
     transition: all .2s;
     border-radius: 3px;
 
     &:hover {
-      color: $color-blue;
+      color: var(--color-blue);
     }
 
   }

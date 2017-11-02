@@ -1,13 +1,15 @@
+:root {
+  --content-heading-margin: 2em;
+}
 
 .c-content-heading {
-  $height-margin: 2em;
   position: relative;
-  padding: 0 0 $height-margin;
-  margin: $height-margin * 2 0 $height-margin;
+  padding: 0 0 var(--content-heading-margin);
+  margin: calc(var(--content-heading-margin) * 2) 0 var(--content-heading-margin);
   text-align: center;
 
   &::after {
-    background: $font-color-default;
+    background: var(--font-color-default);
     position: absolute;
     content: '';
     display: block;
@@ -19,14 +21,14 @@
   }
 
   &.c-content-heading--en {
-    font-family: $ff-logo;
+    font-family: var(--ff-logo);
   }
 
 }
 
 .c-content-heading__title-name {
   line-height: 1.3;
-  font-size: $font-size-30px;
+  font-size: var(--font-size-30px);
   font-weight: normal;
   margin: 0;
 }
