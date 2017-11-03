@@ -1,5 +1,5 @@
-@import "normalize.css";
+@import 'normalize.css';
 
-@import "lib/_foundation";
-@import "lib/_object";
-@import "lib/_project";
+@import 'lib/_foundation.css';
+@import 'lib/_object.css';
+@import 'lib/_project.css';

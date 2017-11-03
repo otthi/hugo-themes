@@ -1,6 +1,6 @@
-@import "foundation/_mixins";
-@import "foundation/_media";
-@import "foundation/_color";
-@import "foundation/_setting";
-@import "foundation/_typography";
-@import "foundation/_base";
+@import 'foundation/_mixins.css';
+@import 'foundation/_media.css';
+@import 'foundation/_color.css';
+@import 'foundation/_setting.css';
+@import 'foundation/_typography.css';
+@import 'foundation/_base.css';

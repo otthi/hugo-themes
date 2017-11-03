@@ -1,6 +1,6 @@
-@import 'object/_content-heading';
-@import 'object/_summary-card';
-@import 'object/_eyecatch';
-@import 'object/_posted-body';
-@import 'object/_posted-footer';
-@import 'object/_message';
+@import 'object/_content-heading.css';
+@import 'object/_summary-card.css';
+@import 'object/_eyecatch.css';
+@import 'object/_posted-body.css';
+@import 'object/_posted-footer.css';
+@import 'object/_message.css';
