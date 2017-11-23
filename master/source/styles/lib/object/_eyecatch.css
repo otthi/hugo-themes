@@ -26,7 +26,7 @@
   &.c-eyecatch__image--is-empty {
     background: var(--color-offwhite);
     text-align: center;
-    color: #fff;
+    color: var(--font-color-default);
   }
 
   span {
