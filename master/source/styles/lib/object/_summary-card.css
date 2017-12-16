@@ -1,35 +1,13 @@
 .c-summary-card-wrapper {
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .c-summary-card {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 0 30px;
-
-  @media (--screen-md-upper) {
-    width: 47.5%;
-    margin-right: 5%;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-
-  }
-
-  @media (--screen-lg-upper) {
-    width: 30%;
-
-    &:nth-child(2n) {
-      margin-right: 5%;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-
-  }
+  width: 500px;
+  margin-bottom: 30px;
 
   a {
     text-decoration: none;
@@ -50,7 +28,7 @@
 
   &::after {
     width: 100%;
-    padding-top: 43.4%;
+    padding-top: 41%;
     display: block;
     content: '';
   }
