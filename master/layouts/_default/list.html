@@ -3,7 +3,7 @@
 
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
     {{ if $paginator.Pages }}
-      <article>
+      <article class="c-article">
         <header class="c-heading c-heading--en">
           <h1 class="c-heading__title-name">{{ .Title }}</h1>
         </header>
