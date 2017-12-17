@@ -4,14 +4,17 @@
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
     {{ if $paginator.Pages }}
       <article class="c-article">
+
         <header class="c-heading c-heading--en">
           <h1 class="c-heading__title-name">{{ .Title }}</h1>
         </header>
+
         <div class="c-summary-card-wrapper">
           {{ range $paginator.Pages }}
             {{ partial "_summary-card.html" . }}
           {{ end }}
         </div>
+
       </article>
     {{ end }}
 
