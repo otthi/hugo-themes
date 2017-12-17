@@ -1,8 +1,8 @@
 {{ define "main" }}
   <main role="main" class="p-main">
     <article>
-      <header class="c-content-heading">
-        <h1 class="c-content-heading__title-name">{{ .Title }}</h1>
+      <header class="c-heading">
+        <h1 class="c-heading__title-name">{{ .Title }}</h1>
       </header>
 
       {{ if and (.Params.image) (ne .Params.image "") }}

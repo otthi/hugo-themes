@@ -1,4 +1,5 @@
-@import 'object/_content-heading.css';
+@import 'object/_article.css';
+@import 'object/_heading.css';
 @import 'object/_summary-card.css';
 @import 'object/_eyecatch.css';
 @import 'object/_posted-body.css';

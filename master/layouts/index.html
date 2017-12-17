@@ -16,9 +16,9 @@
 
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
     {{ if $paginator.Pages }}
-      <article>
-        <header class="c-content-heading c-content-heading--en">
-          <h1 class="c-content-heading__title-name">Recent Articles</h1>
+      <article class="c-article">
+        <header class="c-heading c-heading--en">
+          <h1 class="c-heading__title-name">Recent Articles</h1>
         </header>
         <div class="c-summary-card-wrapper">
           {{ range $paginator.Pages }}
