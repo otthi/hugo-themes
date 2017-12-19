@@ -1,5 +1,25 @@
 @import 'normalize.css';
 
-@import 'lib/_foundation.css';
-@import 'lib/_object.css';
-@import 'lib/_project.css';
+@import 'foundation/_mixins.css';
+@import 'foundation/_media.css';
+@import 'foundation/_color.css';
+@import 'foundation/_setting.css';
+@import 'foundation/_typography.css';
+@import 'foundation/_animation.css';
+@import 'foundation/_apply.css';
+@import 'foundation/_base.css';
+
+@import 'object/_article.css';
+@import 'object/_heading.css';
+@import 'object/_summary-card.css';
+@import 'object/_eyecatch.css';
+@import 'object/_posted-body.css';
+@import 'object/_posted-footer.css';
+@import 'object/_message.css';
+
+@import 'project/_page-wrapper.css';
+@import 'project/_header.css';
+@import 'project/_footer.css';
+@import 'project/_main.css';
+@import 'project/_my-accounts.css';
+@import 'project/_copyright.css';
