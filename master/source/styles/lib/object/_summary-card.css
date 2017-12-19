@@ -1,3 +1,7 @@
+:root {
+  --card-animation-delay: 0.2;
+}
+
 .c-summary-card-wrapper {
   display: flex;
   flex-flow: wrap;
@@ -6,6 +10,7 @@
 }
 
 .c-summary-card {
+  animation: fadeinup 1s both;
   width: 100%;
   margin: 0 0 30px;
   padding: 0 15px;
@@ -17,6 +22,54 @@
 
   @media (--screen-lg-upper) {
     width: 33.33333%;
+  }
+
+  &:nth-child(1) {
+    animation-delay: calc(var(--card-animation-delay) * 1)s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: calc(var(--card-animation-delay) * 2)s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: calc(var(--card-animation-delay) * 3)s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: calc(var(--card-animation-delay) * 4)s;
+  }
+
+  &:nth-child(5) {
+    animation-delay: calc(var(--card-animation-delay) * 5)s;
+  }
+
+  &:nth-child(6) {
+    animation-delay: calc(var(--card-animation-delay) * 6)s;
+  }
+
+  &:nth-child(7) {
+    animation-delay: calc(var(--card-animation-delay) * 7)s;
+  }
+
+  &:nth-child(8) {
+    animation-delay: calc(var(--card-animation-delay) * 8)s;
+  }
+
+  &:nth-child(9) {
+    animation-delay: calc(var(--card-animation-delay) * 9)s;
+  }
+
+  &:nth-child(10) {
+    animation-delay: calc(var(--card-animation-delay) * 10)s;
+  }
+
+  &:nth-child(11) {
+    animation-delay: calc(var(--card-animation-delay) * 11)s;
+  }
+
+  &:nth-child(12) {
+    animation-delay: calc(var(--card-animation-delay) * 12)s;
   }
 
   a {
