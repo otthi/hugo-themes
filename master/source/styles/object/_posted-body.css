@@ -68,7 +68,7 @@
   }
 
   strong {
-    background: linear-gradient(transparent 30%, var(--color-yellow) 0%);
+    background: linear-gradient(transparent 50%, var(--color-yellow) 0%);
     font-weight: normal;
   }
 
