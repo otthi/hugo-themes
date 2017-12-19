@@ -48,20 +48,22 @@
 }
 
 .p-header-logo__image {
+  animation: bouncein 0.75s;
   width: calc(var(--header-prof-size) / 2);
   height: calc(var(--header-prof-size) / 2);
   border-radius: 100%;
   position: absolute;
   left: 50%;
   bottom: calc(var(--header-prof-size) / 4 * -1);
-  transform: translateX(-50%);
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+  margin-left: calc(var(--header-prof-size) / 4 * -1);
 
   @media (--screen-md-upper) {
     width: var(--header-prof-size);
     height: var(--header-prof-size);
     bottom: calc(var(--header-prof-size) / 2 * -1);
+    margin-left: calc(var(--header-prof-size) / 2 * -1);
   }
 
   img {
